@@ -1,13 +1,11 @@
-package com.example.shujiahomework;
+package com.example.shujiahomework.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -15,19 +13,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.shujiahomework.R;
 import com.example.shujiahomework.bean.Alarm;
 import com.example.shujiahomework.presenter.WarnPresenter;
-import com.example.shujiahomework.utli.HttpUtil;
-import com.example.shujiahomework.utli.Utility;
-import com.example.shujiahomework.view.WarnView;
-
-import org.jetbrains.annotations.NotNull;
-
-import java.io.IOException;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.Response;
 
 public class WarnActivity extends AppCompatActivity implements WarnView {
 

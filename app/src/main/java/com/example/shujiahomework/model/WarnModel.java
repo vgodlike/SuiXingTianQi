@@ -1,10 +1,5 @@
 package com.example.shujiahomework.model;
 
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
-import android.widget.Toast;
-
-import com.example.shujiahomework.WarnActivity;
 import com.example.shujiahomework.bean.Alarm;
 import com.example.shujiahomework.presenter.WarnPresenter;
 import com.example.shujiahomework.utli.HttpUtil;

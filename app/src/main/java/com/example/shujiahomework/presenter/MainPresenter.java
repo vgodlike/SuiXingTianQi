@@ -1,10 +1,5 @@
 package com.example.shujiahomework.presenter;
 
-import android.widget.Toast;
-
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
-import com.example.shujiahomework.MainActivity;
 import com.example.shujiahomework.bean.Lunar;
 import com.example.shujiahomework.bean.Sun;
 import com.example.shujiahomework.bean.Weather;

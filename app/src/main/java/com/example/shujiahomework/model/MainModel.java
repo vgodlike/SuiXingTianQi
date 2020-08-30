@@ -2,13 +2,7 @@ package com.example.shujiahomework.model;
 
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.example.shujiahomework.MainActivity;
-import com.example.shujiahomework.R;
-import com.example.shujiahomework.WarnActivity;
-import com.example.shujiahomework.app.MyApp;
 import com.example.shujiahomework.application.MyApplication;
 import com.example.shujiahomework.bean.Lunar;
 import com.example.shujiahomework.bean.Sun;

@@ -1,4 +1,4 @@
-package com.example.shujiahomework;
+package com.example.shujiahomework.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,23 +18,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.shujiahomework.R;
 import com.example.shujiahomework.bean.Alarm;
 import com.example.shujiahomework.bean.Sun;
 import com.example.shujiahomework.bean.Weather;
 import com.example.shujiahomework.presenter.ChoosePresenter;
 import com.example.shujiahomework.utli.Check;
-import com.example.shujiahomework.utli.HttpUtil;
 import com.example.shujiahomework.utli.Transform;
 import com.example.shujiahomework.utli.Utility;
-import com.example.shujiahomework.view.ChooseView;
-
-import org.jetbrains.annotations.NotNull;
-
-import java.io.IOException;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.Response;
 
 public class ChoosecityActivity extends AppCompatActivity implements ChooseView {
 

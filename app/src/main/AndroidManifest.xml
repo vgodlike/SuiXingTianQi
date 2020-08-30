@@ -21,17 +21,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChoosecityActivity"
+        <activity android:name=".view.ChoosecityActivity"
             android:launchMode="singleTask"></activity>
         <activity
-            android:name=".WarnActivity"
+            android:name=".view.WarnActivity"
             android:launchMode="singleInstance"></activity>
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="lM90dUC0uelGajfgMLMxd4rxq9qRtRka" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
