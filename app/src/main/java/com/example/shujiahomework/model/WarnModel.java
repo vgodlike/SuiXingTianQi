@@ -2,16 +2,7 @@ package com.example.shujiahomework.model;
 
 import com.example.shujiahomework.bean.Alarm;
 import com.example.shujiahomework.presenter.WarnPresenter;
-import com.example.shujiahomework.utli.HttpUtil;
-import com.example.shujiahomework.utli.Utility;
-
-import org.jetbrains.annotations.NotNull;
-
-import java.io.IOException;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.Response;
+import com.example.shujiahomework.httputli.HttpRetrofitUtil;
 
 public class WarnModel {
     WarnPresenter warnPresenter;
@@ -24,26 +15,22 @@ public class WarnModel {
      * 根据城市名字请求预警信息
      */
     public void requestAlarm(final String cityName) {
-
-        String alarmUrl = "https://api.seniverse.com/v3/weather/alarm.json?key=SPtGqPQGSW4KGo8jP&location="
-                + cityName;
-        HttpUtil.sendOkHttpRequest(alarmUrl, new Callback() {
+        HttpRetrofitUtil.sendAlarmRetrofitRequest(cityName, new retrofit2.Callback<Alarm>() {
             @Override
-            public void onFailure(@NotNull Call call, @NotNull IOException e) {
-                e.printStackTrace();
-                warnPresenter.loadWarnFailure();
-            }
-
-            @Override
-            public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
-                final String responseText = response.body().string();
-                final Alarm alarm = Utility.handleAlarmResponse(responseText);
+            public void onResponse(retrofit2.Call<Alarm> call, retrofit2.Response<Alarm> response) {
+                Alarm alarm = response.body();
                 if (alarm != null) {
                     warnPresenter.loadWarnInfoSuccess(alarm);
                 } else {
                     warnPresenter.loadWarnFailure();
                 }
             }
+
+            @Override
+            public void onFailure(retrofit2.Call<Alarm> call, Throwable t) {
+                warnPresenter.loadWarnFailure();
+            }
         });
     }
+
 }

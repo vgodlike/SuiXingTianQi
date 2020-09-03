@@ -85,8 +85,8 @@ public class WarnActivity extends AppCompatActivity implements WarnView {
             public void run() {
                 warnText.setText(cityName + "预警");
                 alarmLayout.removeAllViews();
-                if (alarm.alarmsBeanList.size() != 0) {
-                    for (Alarm.ResultsBean.AlarmsBean alarmsBean : alarm.alarmsBeanList) {
+                if (alarm.getResults().get(0).getAlarms().size() != 0) {
+                    for (Alarm.ResultsBean.AlarmsBean alarmsBean : alarm.getResults().get(0).getAlarms()) {
                         alarmText = view.findViewById(R.id.alarm_text);
                         alarmText.setText(alarmsBean.getTitle());
                         alarmLayout.addView(view);

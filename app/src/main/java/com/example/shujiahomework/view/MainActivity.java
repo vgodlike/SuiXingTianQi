@@ -27,7 +27,7 @@ import com.example.shujiahomework.bean.Lunar;
 import com.example.shujiahomework.bean.Sun;
 import com.example.shujiahomework.bean.Weather;
 import com.example.shujiahomework.presenter.MainPresenter;
-import com.example.shujiahomework.utli.Utility;
+import com.example.shujiahomework.httputli.Utility;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -249,7 +249,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     @Override
     public void showWeatherInfo(Weather weather) {
-        final String degree = weather.getNow().getTemperature();
+        final String degree = weather.getResults().get(0).getNow().getTemperature();
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -275,8 +275,8 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     @Override
     public void showSunInfo(Sun sun) {
-        final String sunrise = sun.getSun().get(0).getSunrise();
-        final String sunset = sun.getSun().get(0).getSunset();
+        final String sunrise = sun.getResults().get(0).getSun().get(0).getSunrise();
+        final String sunset = sun.getResults().get(0).getSun().get(0).getSunset();
         runOnUiThread(new Runnable() {
             @Override
             public void run() {

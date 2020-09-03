@@ -4,8 +4,9 @@ import java.util.List;
 
 public class Lunar {
 
+
     /**
-     * results : {"chinese_calendar":[{"date":"2020-08-24","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"甲申","ganzhi_day":"己亥","lunar_year":"2020","lunar_month":"8","lunar_day":"6","lunar_month_name":"七月","lunar_day_name":"初六","lunar_leap_month":"4","lunar_festival":"","solar_term":""},{"date":"2020-08-25","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"甲申","ganzhi_day":"庚子","lunar_year":"2020","lunar_month":"8","lunar_day":"7","lunar_month_name":"七月","lunar_day_name":"初七","lunar_leap_month":"4","lunar_festival":"七夕情人节","solar_term":""},{"date":"2020-08-26","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"甲申","ganzhi_day":"辛丑","lunar_year":"2020","lunar_month":"8","lunar_day":"8","lunar_month_name":"七月","lunar_day_name":"初八","lunar_leap_month":"4","lunar_festival":"","solar_term":""},{"date":"2020-08-27","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"甲申","ganzhi_day":"壬寅","lunar_year":"2020","lunar_month":"8","lunar_day":"9","lunar_month_name":"七月","lunar_day_name":"初九","lunar_leap_month":"4","lunar_festival":"","solar_term":""},{"date":"2020-08-28","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"甲申","ganzhi_day":"癸卯","lunar_year":"2020","lunar_month":"8","lunar_day":"10","lunar_month_name":"七月","lunar_day_name":"初十","lunar_leap_month":"4","lunar_festival":"","solar_term":""},{"date":"2020-08-29","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"甲申","ganzhi_day":"甲辰","lunar_year":"2020","lunar_month":"8","lunar_day":"11","lunar_month_name":"七月","lunar_day_name":"十一","lunar_leap_month":"4","lunar_festival":"","solar_term":""},{"date":"2020-08-30","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"甲申","ganzhi_day":"乙巳","lunar_year":"2020","lunar_month":"8","lunar_day":"12","lunar_month_name":"七月","lunar_day_name":"十二","lunar_leap_month":"4","lunar_festival":"","solar_term":""}]}
+     * results : {"chinese_calendar":[{"date":"2020-09-03","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"甲申","ganzhi_day":"己酉","lunar_year":"2020","lunar_month":"8","lunar_day":"16","lunar_month_name":"七月","lunar_day_name":"十六","lunar_leap_month":"4","lunar_festival":"","solar_term":""},{"date":"2020-09-04","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"甲申","ganzhi_day":"庚戌","lunar_year":"2020","lunar_month":"8","lunar_day":"17","lunar_month_name":"七月","lunar_day_name":"十七","lunar_leap_month":"4","lunar_festival":"","solar_term":""},{"date":"2020-09-05","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"甲申","ganzhi_day":"辛亥","lunar_year":"2020","lunar_month":"8","lunar_day":"18","lunar_month_name":"七月","lunar_day_name":"十八","lunar_leap_month":"4","lunar_festival":"","solar_term":""},{"date":"2020-09-06","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"甲申","ganzhi_day":"壬子","lunar_year":"2020","lunar_month":"8","lunar_day":"19","lunar_month_name":"七月","lunar_day_name":"十九","lunar_leap_month":"4","lunar_festival":"","solar_term":""},{"date":"2020-09-07","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"乙酉","ganzhi_day":"癸丑","lunar_year":"2020","lunar_month":"8","lunar_day":"20","lunar_month_name":"七月","lunar_day_name":"二十","lunar_leap_month":"4","lunar_festival":"","solar_term":"白露"},{"date":"2020-09-08","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"乙酉","ganzhi_day":"甲寅","lunar_year":"2020","lunar_month":"8","lunar_day":"21","lunar_month_name":"七月","lunar_day_name":"廿一","lunar_leap_month":"4","lunar_festival":"","solar_term":""},{"date":"2020-09-09","zodiac":"鼠","ganzhi_year":"庚子","ganzhi_month":"乙酉","ganzhi_day":"乙卯","lunar_year":"2020","lunar_month":"8","lunar_day":"22","lunar_month_name":"七月","lunar_day_name":"廿二","lunar_leap_month":"4","lunar_festival":"","solar_term":""}]}
      */
 
     private ResultsBean results;
@@ -31,16 +32,16 @@ public class Lunar {
 
         public static class ChineseCalendarBean {
             /**
-             * date : 2020-08-24
+             * date : 2020-09-03
              * zodiac : 鼠
              * ganzhi_year : 庚子
              * ganzhi_month : 甲申
-             * ganzhi_day : 己亥
+             * ganzhi_day : 己酉
              * lunar_year : 2020
              * lunar_month : 8
-             * lunar_day : 6
+             * lunar_day : 16
              * lunar_month_name : 七月
-             * lunar_day_name : 初六
+             * lunar_day_name : 十六
              * lunar_leap_month : 4
              * lunar_festival :
              * solar_term :

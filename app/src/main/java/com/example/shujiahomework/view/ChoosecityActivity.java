@@ -25,7 +25,7 @@ import com.example.shujiahomework.bean.Weather;
 import com.example.shujiahomework.presenter.ChoosePresenter;
 import com.example.shujiahomework.utli.Check;
 import com.example.shujiahomework.utli.Transform;
-import com.example.shujiahomework.utli.Utility;
+import com.example.shujiahomework.httputli.Utility;
 
 public class ChoosecityActivity extends AppCompatActivity implements ChooseView {
 
@@ -129,8 +129,8 @@ public class ChoosecityActivity extends AppCompatActivity implements ChooseView 
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                degreeText.setText(weather.getNow().getTemperature() + "°");
-                weatherText.setText(weather.getNow().getText());
+                degreeText.setText(weather.getResults().get(0).getNow().getTemperature() + "°");
+                weatherText.setText(weather.getResults().get(0).getNow().getText());
             }
         });
 
@@ -138,8 +138,8 @@ public class ChoosecityActivity extends AppCompatActivity implements ChooseView 
 
     @Override
     public void showSunInfo(Sun sun) {
-        final String sunrise = sun.getSun().get(0).getSunrise();
-        final String sunset = sun.getSun().get(0).getSunrise();
+        final String sunrise = sun.getResults().get(0).getSun().get(0).getSunrise();
+        final String sunset = sun.getResults().get(0).getSun().get(0).getSunrise();
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -166,8 +166,8 @@ public class ChoosecityActivity extends AppCompatActivity implements ChooseView 
             @Override
             public void run() {
                 alarmLayout.removeAllViews();
-                if (alarm.alarmsBeanList.size() != 0) {
-                    for (Alarm.ResultsBean.AlarmsBean alarmsBean : alarm.alarmsBeanList) {
+                if (alarm.getResults().get(0).getAlarms().size() != 0) {
+                    for (Alarm.ResultsBean.AlarmsBean alarmsBean : alarm.getResults().get(0).getAlarms()) {
                         alarmText = view.findViewById(R.id.alarm_text);
                         alarmText.setText(alarmsBean.getTitle());
                         alarmLayout.addView(view);

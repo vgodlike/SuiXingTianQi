@@ -1,10 +1,9 @@
 package com.example.shujiahomework.bean;
 
-import com.google.gson.annotations.SerializedName;
-
 import java.util.List;
 
 public class Alarm {
+
 
     private List<ResultsBean> results;
 
@@ -16,13 +15,10 @@ public class Alarm {
         this.results = results;
     }
 
-    @SerializedName("alarms")
-    public List<ResultsBean.AlarmsBean> alarmsBeanList;
-
     public static class ResultsBean {
         /**
-         * location : {"id":"WTG7R0CSBHZ9","name":"蚌埠","country":"CN","path":"蚌埠,蚌埠,安徽,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"}
-         * alarms : [{"title":"蚌埠市气象台发布雷雨大风黄色预警","type":"雷雨大风","level":"黄色","status":"","description":"未来6小时内我市部分地区将出现雷雨大风天气，请注意防范！","pub_date":"2020-08-19T14:34:00+08:00"},{"title":"蚌埠市气象台发布高温黄色预警","type":"高温","level":"黄色","status":"","description":"24小时内我市最高气温将在35℃以上。请注意防范！","pub_date":"2020-08-19T11:57:00+08:00"}]
+         * location : {"id":"WX4FBXXFKE4F","name":"北京","country":"CN","path":"北京,北京,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"}
+         * alarms : [{"title":"北京市气象台2020年09月02日20时00分发布大风蓝色预警信号","type":"大风","level":"蓝色","status":"","description":"市气象台2020年9月2日20时00分发布大风蓝色预警信号：受冷空气影响，本市2日夜间至3日白天偏北风将逐渐增大至4级左右，阵风可达7级左右，请注意防范。","pub_date":"2020-09-02T20:06:57+08:00"}]
          */
 
         private LocationBean location;
@@ -46,10 +42,10 @@ public class Alarm {
 
         public static class LocationBean {
             /**
-             * id : WTG7R0CSBHZ9
-             * name : 蚌埠
+             * id : WX4FBXXFKE4F
+             * name : 北京
              * country : CN
-             * path : 蚌埠,蚌埠,安徽,中国
+             * path : 北京,北京,中国
              * timezone : Asia/Shanghai
              * timezone_offset : +08:00
              */
@@ -112,12 +108,12 @@ public class Alarm {
 
         public static class AlarmsBean {
             /**
-             * title : 蚌埠市气象台发布雷雨大风黄色预警
-             * type : 雷雨大风
-             * level : 黄色
+             * title : 北京市气象台2020年09月02日20时00分发布大风蓝色预警信号
+             * type : 大风
+             * level : 蓝色
              * status :
-             * description : 未来6小时内我市部分地区将出现雷雨大风天气，请注意防范！
-             * pub_date : 2020-08-19T14:34:00+08:00
+             * description : 市气象台2020年9月2日20时00分发布大风蓝色预警信号：受冷空气影响，本市2日夜间至3日白天偏北风将逐渐增大至4级左右，阵风可达7级左右，请注意防范。
+             * pub_date : 2020-09-02T20:06:57+08:00
              */
 
             private String title;

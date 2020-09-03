@@ -1,9 +1,9 @@
-package com.example.shujiahomework.utli;
+package com.example.shujiahomework.httputli;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 
-public class HttpUtil {
+public class HttpOkhttpUtil {
 
     public static void sendOkHttpRequest(String address,okhttp3.Callback callback){
         OkHttpClient client=new OkHttpClient();
